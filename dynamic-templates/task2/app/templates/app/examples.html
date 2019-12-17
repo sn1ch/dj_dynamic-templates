@@ -1,0 +1,10 @@
+{% extends "app/base.html" %}
+<!DOCTYPE html>{% load static %}
+
+{% block content_head %}Каталог компьютеров Apple{% endblock %}
+
+{% block imgs %}
+{% for item in items %}
+{% include "app/image_rend.html" %}
+{% endfor %}
+{% endblock %}
